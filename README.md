@@ -2,7 +2,7 @@
 
 Built with [Evolvable](https://github.com/mattruzicka/evolvable)
 
-## Usage
+## Command Line Setup & Usage
 
 ```ruby
 git clone https://github.com/mattruzicka/evolve_string.git
@@ -53,9 +53,12 @@ Hello Evolvable | Generation 36
 ```
 
 ## Hear It
-The second argument can be an integer which tells the program to "say" the best instance every input-number of generations.
+The second argument can be an integer which tells the program to "say" the best instance every given number of generations. The default is 0.
 
-For example, try `ruby evolve_string.rb "Thank you for listening" 20`
+An an example, run this:
 
+```
+ruby evolve_string.rb "Thank you for listening" 20
+```
 
 Note, the "say" feature assumes your system has a text-to-speech command named "say" installed.
