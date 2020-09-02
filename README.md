@@ -5,8 +5,8 @@ Built with [Evolvable](https://github.com/mattruzicka/evolvable)
 ## Usage
 
 ```ruby
-git clone https://github.com/mattruzicka/evolvable_string.git
-cd evolvable_string
+git clone https://github.com/mattruzicka/evolve_string.git
+cd evolve_string
 bundle install
 ruby evolve_string.rb "Hello Evolvable"
 ```
