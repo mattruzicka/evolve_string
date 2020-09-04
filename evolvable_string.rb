@@ -21,7 +21,7 @@ class EvolvableString
       { char_genes: { count: input_string.length, class: CharGene } }
     end
 
-    def evolvable_before_evolve(population)
+    def before_evolution(population)
       best_instance = population.best_instance
       puts "#{best_instance} | Generation #{population.evolutions_count}"
       say_string(best_instance) if say_string?(population)

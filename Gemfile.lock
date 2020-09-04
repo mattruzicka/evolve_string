@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/mattruzicka/evolvable.git
-  revision: 3069fae639a18abe059dbea112431ff5f4a65384
+  revision: 1f9cdbc668ebd495d66c618338763a4052337f2e
   branch: version-1.0.0
   specs:
     evolvable (1.0.0)
