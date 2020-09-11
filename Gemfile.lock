@@ -1,19 +1,13 @@
-GIT
-  remote: https://github.com/mattruzicka/evolvable.git
-  revision: 1f9cdbc668ebd495d66c618338763a4052337f2e
-  branch: version-1.0.0
-  specs:
-    evolvable (1.0.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
+    evolvable (1.0.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  evolvable!
+  evolvable
 
 BUNDLED WITH
    2.1.4

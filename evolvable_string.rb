@@ -12,12 +12,12 @@ class EvolvableString
       @input_string = string
       @say ||= say.to_i
       population = new_population(size: 100)
-      population.evaluator = Evolvable::Evaluator.new(equalize: input_string.length)
+      population.evaluation = Evolvable::Evaluation.new(equalize: input_string.length)
       population.mutation = Evolvable::Mutation.new(probability: 0.8)
       population.evolve
     end
 
-    def evolvable_genes
+    def gene_space
       { char_genes: { count: input_string.length, class: CharGene } }
     end
 
@@ -36,8 +36,8 @@ class EvolvableString
     end
   end
 
-  def evolvable_value
-    @evolvable_value ||= compute_evolvable_value
+  def value
+    @value ||= compute_value
   end
 
   def to_s
@@ -46,7 +46,7 @@ class EvolvableString
 
   private
 
-  def compute_evolvable_value
+  def compute_value
     value = 0
     find_genes(:char_genes).each_with_index do |gene, index|
       value += 1 if gene.to_s == self.class.input_string[index]
